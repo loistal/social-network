@@ -1,14 +1,5 @@
 <?php
-
-// root: username, no password by default
-$connection = mysqli_connect("localhost", "root", "", "iaorana");
-
-if(mysqli_connect_errno()) {
-    echo "Failed to connect: " . mysqli_connect_errno();
-}
-
-$query = mysqli_query($connection, "INSERT INTO test VALUES ('1', 'Lois')");
-
+require "config/config.php";
 ?>
 
 <!DOCTYPE html>
